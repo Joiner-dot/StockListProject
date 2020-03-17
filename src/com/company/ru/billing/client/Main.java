@@ -14,7 +14,7 @@ public class Main{
     //CatalogFileLoader для 6 лабораторной
     public static void main (String[] args) throws IOException{
         ItemCatalog itemCatalog = new ItemCatalog ();
-        CatalogFileLoader file = new CatalogFileLoader ("/Users/egor_kuzmin/IdeaProjects/StockListProject/src/com/company/Readme.txt");
+        CatalogFileLoader file = new CatalogFileLoader ("src/com/company/Readme.txt");
         try{
             file.load (itemCatalog);
         } catch (CatalogLoadExceptions | IOException catalogLoadExceptions){
