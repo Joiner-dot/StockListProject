@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="StockListProject:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="267ba37f-238e-4c2e-bd8a-a782bab5709c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/StockListProject/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/client/CatalogLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/client/CatalogLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/FoodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/FoodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogFileLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogFileLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/FoodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/FoodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/ItemCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/ItemCatalog.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SLP" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -33,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/company" />
@@ -42,6 +58,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -98,6 +117,8 @@
       <workItem from="1584289706117" duration="624000" />
       <workItem from="1584381476224" duration="520000" />
       <workItem from="1584454879819" duration="395000" />
+      <workItem from="1584456183643" duration="239000" />
+      <workItem from="1584456951597" duration="284000" />
     </task>
     <servers />
   </component>
@@ -109,26 +130,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1583846459378" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1583880702962">
+    <state x="470" y="272" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584456226097">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583880702962" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1583880702961">
+    <state x="470" y="272" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1584456226097" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1584457235173">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583880702961" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1583880702960">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584457235173" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1584457235172">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583880702960" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1583880702961">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584457235172" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1584457235171">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583880702961" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1583750919426">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584457235171" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1584457235172">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583750919426" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584457235172" />
+    <state x="221" y="63" key="SettingsEditor" timestamp="1584456396287">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584456396287" />
     <state x="458" y="220" key="extract.method.dialog" timestamp="1583878348224">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
