@@ -100,15 +100,30 @@ public class GenericItem{
             return false;
     }
 
+
     @Override
     public int hashCode (){
         int result = 1;
         result = 30 * result + ID;
         result = 30 * result + currentID;
-        result = 30 * result + name.hashCode ();
-        result = (int) (30 * result + (int) price + price % 1);
-        result = 30 * result + analog.hashCode ();
-        result = 30 * result + Category.values ().hashCode ();
+        if (name != null){
+            result = 30 * result + name.hashCode ();
+        } else{
+            result = 30 * result;
+        }
+        if (price != 0){
+            result = (int) (30 * result + (int) price);
+            result = (int) (30 * result + (int) (price % 1));
+        } else
+            result = 30 * result;
+        if (analog != null){
+            result = 30 * result + analog.hashCode ();
+        } else
+            result = 30 * result;
+        if (category != null){
+            result = 30 * result + category.hashCode ();
+        } else
+            result = 30 * result;
         return result;
     }
 

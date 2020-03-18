@@ -38,14 +38,11 @@ public class TechicalItem extends GenericItem{
 
     @Override
     public int hashCode (){
-        int result = 1;
-        result = 30 * result + getID ();
-        result = 30 * result + getCurrentID ();
-        result = 30 * result + getName ().hashCode ();
-        result = (int) (30 * result + (int) getPrice () + getPrice () % 1);
-        result = 30 * result + analog.hashCode ();
-        result = 30 * result + Arrays.hashCode (Category.values ());
-        result = 30 * result + warrantyTime;
+        int result = super.hashCode ();
+        if (warrantyTime != 0)
+            result = result * 30 + warrantyTime;
+        else
+            result *= 30;
         return result;
     }
 

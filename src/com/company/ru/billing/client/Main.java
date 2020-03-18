@@ -9,8 +9,10 @@ import com.company.ru.itmo.exceptions.ItemAlreadyExistsException;
 import java.io.IOException;
 import java.util.Date;
 
+import static com.company.ru.billing.stocklist.GenericItem.Category.*;
+
 public class Main{
-    //CatalogFileLoader для 6 лабораторной
+    //!!! CatalogFileLoader, ItemCatalog, CatalogLoadException,SubLoader для 6 лабораторной
     public static void main (String[] args) throws IOException{
         ItemCatalog itemCatalog = new ItemCatalog ();
         CatalogFileLoader file = new CatalogFileLoader ("src/com/company/Readme.txt");
