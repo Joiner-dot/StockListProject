@@ -6,16 +6,12 @@ import com.company.ru.billing.stocklist.GenericItem.Category;
 import com.company.ru.billing.stocklist.ItemCatalog;
 import com.company.ru.itmo.exceptions.CatalogLoadExceptions;
 import com.company.ru.itmo.exceptions.ItemAlreadyExistsException;
-
-import javax.xml.bind.DatatypeConverter;
 import java.io.IOException;
 import java.util.Date;
 
 public class Main{
     //CatalogFileLoader для 6 лабораторной
     public static void main (String[] args) throws IOException{
-        String abc = "abc";
-        System.out.println (abc.hashCode ());
         ItemCatalog itemCatalog = new ItemCatalog ();
         CatalogFileLoader file = new CatalogFileLoader ("src/com/company/Readme.txt");
         try{
