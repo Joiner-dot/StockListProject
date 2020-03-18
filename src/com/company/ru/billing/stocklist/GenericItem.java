@@ -100,6 +100,18 @@ public class GenericItem{
             return false;
     }
 
+    @Override
+    public int hashCode (){
+        int result = 1;
+        result = 30 * result + ID;
+        result = 30 * result + currentID;
+        result = 30 * result + name.hashCode ();
+        result = (int) (30 * result + (int) price + price % 1);
+        result = 30 * result + analog.hashCode ();
+        result = 30 * result + Category.values ().hashCode ();
+        return result;
+    }
+
     public GenericItem clone (){
         GenericItem o = new GenericItem ();
         o.setName (this.getName ());

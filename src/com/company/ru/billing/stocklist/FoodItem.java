@@ -62,6 +62,21 @@ public class FoodItem extends GenericItem{
     }
 
     @Override
+    public int hashCode (){
+        int result = 1;
+        result = 30 * result + getID ();
+        result = 30 * result + getCurrentID ();
+        result = 30 * result + getName ().hashCode ();
+        result = (int) (30 * result + (int) getPrice () + getPrice () % 1);
+        result = 30 * result + analog.hashCode ();
+        result = 30 * result + Category.values ().hashCode ();
+        result = 30 * result + dateOfIncome.hashCode ();
+        result = 30 * result + expires;
+
+        return result;
+    }
+
+    @Override
     public FoodItem clone (){
         FoodItem o = new FoodItem ("Пушка");
         o.setName (this.getName ());
