@@ -3,7 +3,7 @@ package com.company.ru.itmo.exceptions;
 
 public class CatalogLoadExceptions extends Exception{
     public CatalogLoadExceptions (ItemAlreadyExistsException e){
-        this.name = "O my garable";
+        this.name = "Exception of CatalogLoad";
     }
 
     public String getName (){

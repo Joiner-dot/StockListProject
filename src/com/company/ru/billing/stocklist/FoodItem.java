@@ -56,8 +56,14 @@ public class FoodItem extends GenericItem{
     }
 
     public boolean equals (Object o){
-        if (o instanceof FoodItem)
-            return super.equals (o) && this.analog.equals (o) && this.dateOfIncome.equals (o) && this.expires == ((FoodItem) o).expires;
+        if (o instanceof FoodItem){
+            if (this.analog != null && ((FoodItem) o).analog != null)
+            return super.equals (o) && this.analog.equals (((FoodItem) o).analog) && this.dateOfIncome.equals (o) && this.expires == ((FoodItem) o).expires;
+            else if (this.analog == null && ((FoodItem) o).analog == null){
+                return super.equals (o) && this.expires == ((FoodItem) o).expires;
+            }
+            else return false;
+        }
         else return false;
     }
 

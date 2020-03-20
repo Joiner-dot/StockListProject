@@ -25,10 +25,9 @@ public class GenericItem{
 
     public GenericItem (){
         this.ID = GenericItem.currentID++;
-        this.analog = null;
-        this.category = null;
+        this.analog = this;
         this.price = 0f;
-        this.name = null;
+        this.name = "no name";
         if (GenericItem.currentID < this.ID){
             GenericItem.currentID = this.ID;
         }
@@ -94,8 +93,9 @@ public class GenericItem{
     }
 
     public boolean equals (Object o){
-        if (o instanceof GenericItem)
-            return ((GenericItem) o).getName ().equals (this.name) && ((GenericItem) o).category == this.category;
+        if (o instanceof GenericItem){
+            return ((GenericItem) o).getName ().equals (this.name) && ((GenericItem) o).category == this.category && ((GenericItem) o).price == this.price;
+        }
         else
             return false;
     }
@@ -104,8 +104,6 @@ public class GenericItem{
     @Override
     public int hashCode (){
         int result = 1;
-        result = 30 * result + ID;
-        result = 30 * result + currentID;
         if (name != null){
             result = 30 * result + name.hashCode ();
         } else{

@@ -13,7 +13,7 @@ public class SubLoader implements CatalogLoader{
     @Override
     public void load (ItemCatalog itemCatalog) throws CatalogLoadExceptions{
         GenericItem item1 = new GenericItem ("КОркунов", 10f, Category.GENERAL);
-        GenericItem item2 = new FoodItem ("Bread", 12, null, new Date (), (short) 10);
+        GenericItem item2 = new FoodItem ("Продукт", 45, null, new Date (), (short) 120);
         try{
             itemCatalog.addItem (item1);
             itemCatalog.addItem (item2);

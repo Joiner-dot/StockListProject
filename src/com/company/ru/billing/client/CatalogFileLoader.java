@@ -1,11 +1,13 @@
 package com.company.ru.billing.client;
 
 import com.company.ru.billing.stocklist.FoodItem;
+import com.company.ru.billing.stocklist.GenericItem;
 import com.company.ru.billing.stocklist.ItemCatalog;
 import com.company.ru.itmo.exceptions.CatalogLoadExceptions;
 import com.company.ru.itmo.exceptions.ItemAlreadyExistsException;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -40,13 +42,17 @@ public class CatalogFileLoader implements CatalogLoader{
                 itemCatalog.addItem (item);
             }
             stream.close ();
-        } catch (FileNotFoundException e){
+        } catch (IOException e){
+            if (stream != null){
+                stream.close ();
+            }
+            e.printStackTrace ();
+        }
+        catch (ItemAlreadyExistsException e)
+        {
             stream.close ();
             e.printStackTrace ();
-
-        } catch (ItemAlreadyExistsException e){
-            stream.close ();
-            e.printStackTrace ();
+            throw new CatalogLoadExceptions (e);
         }
     }
 
@@ -57,12 +63,13 @@ public class CatalogFileLoader implements CatalogLoader{
 
             in = new BufferedReader (
                     new InputStreamReader (
-                            new FileInputStream (fileDir), "UTF8"));
+                            new FileInputStream (fileDir)));
 
             String line;
 
             while ((line = in.readLine ()) != null){
-                String[] items = line.split (";");
+                String str = new String (line.getBytes (StandardCharsets.UTF_8));
+                String[] items = str.split (";");
                 String name = items[0];
                 float price = Float.parseFloat (items[1]);
                 short expires = Short.parseShort (items[2]);
@@ -71,15 +78,17 @@ public class CatalogFileLoader implements CatalogLoader{
             }
 
             in.close ();
-        } catch (UnsupportedEncodingException e){
-            in.close ();
-            e.printStackTrace ();
         } catch (IOException e){
+            if (in != null){
+                in.close ();
+            }
+            e.printStackTrace ();
+        }
+        catch (ItemAlreadyExistsException e)
+        {
             in.close ();
             e.printStackTrace ();
-        } catch (ItemAlreadyExistsException e){
-            in.close ();
-            e.printStackTrace ();
+            throw new CatalogLoadExceptions (e);
         }
     }
 
@@ -89,27 +98,29 @@ public class CatalogFileLoader implements CatalogLoader{
             File fileDir = new File (fileName);
             in = new BufferedReader (
                     new InputStreamReader (
-                            new FileInputStream (fileDir), "UTF-8"));
+                            new FileInputStream (fileDir)));
             String line;
             while ((line = in.readLine ()) != null){
                 String str = new String (line.getBytes ("windows-1251"));
-                System.out.println (str);
                 String[] items = str.split (";");
                 String name = items[0];
                 float price = Float.parseFloat (items[1]);
                 short expires = Short.parseShort (items[2]);
-                FoodItem item = new FoodItem (name, price, null, new Date (), expires);
+                GenericItem item = new FoodItem (name, price, null, new Date (), expires);
                 itemCatalog.addItem (item);
             }
             in.close ();
-        } catch (UnsupportedEncodingException e){
-            in.close ();
-            e.printStackTrace ();
         } catch (IOException e){
+            if (in != null){
+                in.close ();
+            }
             e.printStackTrace ();
-        } catch (ItemAlreadyExistsException e){
+        }
+        catch (ItemAlreadyExistsException e)
+        {
             in.close ();
             e.printStackTrace ();
+            throw new CatalogLoadExceptions (e);
         }
     }
 }
