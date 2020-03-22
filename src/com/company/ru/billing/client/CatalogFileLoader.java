@@ -19,7 +19,7 @@ public class CatalogFileLoader implements CatalogLoader{
     public CatalogFileLoader (String fileName){
         this.fileName = fileName;
     }
-
+//Чтение из файла и добавление продукта
     @Override
     public void load (ItemCatalog itemCatalog) throws CatalogLoadExceptions, IOException{
         File f = new File (fileName);
@@ -53,7 +53,7 @@ public class CatalogFileLoader implements CatalogLoader{
             throw new CatalogLoadExceptions (e);
         }
     }
-
+//Чтение из файла с кодировкой UTF-8
     public void utf8load (ItemCatalog itemCatalog) throws CatalogLoadExceptions, IOException{
         BufferedReader in = null;
         try{
@@ -87,7 +87,7 @@ public class CatalogFileLoader implements CatalogLoader{
             throw new CatalogLoadExceptions (e);
         }
     }
-
+//Чтение из файла с кодировкой Windows-1251
     public void windows1251load (ItemCatalog itemCatalog) throws CatalogLoadExceptions, IOException{
         BufferedReader in = null;
         try{
