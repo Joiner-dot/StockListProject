@@ -22,7 +22,7 @@ public class Main{
         } catch (CatalogLoadExceptions catalogLoadExceptions){
             catalogLoadExceptions.printStackTrace ();
         }
-        CatalogFileLoader file = new CatalogFileLoader ("src/com/company/Readme.txt");
+        CatalogFileLoader file = new CatalogFileLoader ("com/company/Readme.txt");
         try{
             file.windows1251load (itemCatalog);
         } catch (CatalogLoadExceptions | IOException catalogLoadExceptions){

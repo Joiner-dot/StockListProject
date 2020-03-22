@@ -1,5 +1,7 @@
 package com.company.ru.billing.stocklist;
 
+import java.lang.String;
+
 import java.util.Date;
 
 public class FoodItem extends GenericItem{
@@ -13,11 +15,11 @@ public class FoodItem extends GenericItem{
     }
 
     public FoodItem (String name, float price, short expires){
-        this (name, price, null, null, expires);
+        this (name, price, null, new Date (), expires);
     }
 
     public FoodItem (String name){
-        this (name, 0, null, null, (short) 0);
+        this (name, 0, null, new Date (), (short) 0);
     }
 
     public Date getDateOfIncome (){
@@ -56,15 +58,13 @@ public class FoodItem extends GenericItem{
     }
 
     public boolean equals (Object o){
-        if (o instanceof FoodItem){
-            if (this.analog != null && ((FoodItem) o).analog != null)
-            return super.equals (o) && this.analog.equals (((FoodItem) o).analog) && this.dateOfIncome.equals (o) && this.expires == ((FoodItem) o).expires;
-            else if (this.analog == null && ((FoodItem) o).analog == null){
-                return super.equals (o) && this.expires == ((FoodItem) o).expires;
-            }
-            else return false;
+        try{
+            if (o instanceof FoodItem){
+                return super.equals (o) && this.getAnalog ().equals (((FoodItem) o).getAnalog ()) && this.dateOfIncome.equals (o) && this.expires == ((FoodItem) o).expires;
+            } else return false;
+        } catch (NullPointerException e){
+            return super.equals (o) && this.analog == null && ((FoodItem) o).analog == null && this.dateOfIncome.equals (((FoodItem) o).dateOfIncome) && this.expires == ((FoodItem) o).expires;
         }
-        else return false;
     }
 
     @Override

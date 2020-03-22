@@ -47,9 +47,7 @@ public class CatalogFileLoader implements CatalogLoader{
                 stream.close ();
             }
             e.printStackTrace ();
-        }
-        catch (ItemAlreadyExistsException e)
-        {
+        } catch (ItemAlreadyExistsException e){
             stream.close ();
             e.printStackTrace ();
             throw new CatalogLoadExceptions (e);
@@ -83,9 +81,7 @@ public class CatalogFileLoader implements CatalogLoader{
                 in.close ();
             }
             e.printStackTrace ();
-        }
-        catch (ItemAlreadyExistsException e)
-        {
+        } catch (ItemAlreadyExistsException e){
             in.close ();
             e.printStackTrace ();
             throw new CatalogLoadExceptions (e);
@@ -115,9 +111,7 @@ public class CatalogFileLoader implements CatalogLoader{
                 in.close ();
             }
             e.printStackTrace ();
-        }
-        catch (ItemAlreadyExistsException e)
-        {
+        } catch (ItemAlreadyExistsException e){
             in.close ();
             e.printStackTrace ();
             throw new CatalogLoadExceptions (e);

@@ -25,7 +25,7 @@ public class GenericItem{
 
     public GenericItem (){
         this.ID = GenericItem.currentID++;
-        this.analog = this;
+        this.analog = null;
         this.price = 0f;
         this.name = "no name";
         if (GenericItem.currentID < this.ID){
@@ -93,11 +93,15 @@ public class GenericItem{
     }
 
     public boolean equals (Object o){
-        if (o instanceof GenericItem){
-            return ((GenericItem) o).getName ().equals (this.name) && ((GenericItem) o).category == this.category && ((GenericItem) o).price == this.price;
+        try{
+            if (o instanceof GenericItem){
+                return ((GenericItem) o).getName ().equals (this.name) && ((GenericItem) o).category.equals (this.category) && ((GenericItem) o).price == this.price && this.analog.equals (((GenericItem) o).analog);
+            } else{
+                return false;
+            }
+        } catch (NullPointerException e){
+            return ((GenericItem) o).getName ().equals (this.name) && ((GenericItem) o).category.equals (this.category) && ((GenericItem) o).price == this.price && this.analog == null && ((GenericItem) o).analog == null;
         }
-        else
-            return false;
     }
 
 
