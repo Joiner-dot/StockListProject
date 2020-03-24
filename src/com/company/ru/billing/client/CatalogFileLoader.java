@@ -53,7 +53,7 @@ public class CatalogFileLoader implements CatalogLoader{
             throw new CatalogLoadExceptions (e);
         }
     }
-
+//считывание с кодировкой UTF-8
     public void utf8load (ItemCatalog itemCatalog) throws CatalogLoadExceptions, IOException{
         BufferedReader in = null;
         try{
@@ -87,7 +87,7 @@ public class CatalogFileLoader implements CatalogLoader{
             throw new CatalogLoadExceptions (e);
         }
     }
-
+//считывание файла с кодировкой windows-1251
     public void windows1251load (ItemCatalog itemCatalog) throws CatalogLoadExceptions, IOException{
         BufferedReader in = null;
         try{
