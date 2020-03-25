@@ -25,8 +25,8 @@ public class TechicalItem extends GenericItem{
     private TechicalItem analog;
 
     @Override
-    public void printAll (){
-        super.printAll ();
+    public void printall (){
+        super.printall ();
         System.out.println (warrantyTime);
     }
 

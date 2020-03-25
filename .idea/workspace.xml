@@ -7,12 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="267ba37f-238e-4c2e-bd8a-a782bab5709c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogLoadException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/FoodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/FoodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/GenericItem$Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/GenericItem$Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/GenericItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/GenericItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/ItemCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/ItemCatalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/TechicalItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StockListProject/com/company/ru/billing/stocklist/TechicalItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogFileLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogFileLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogFileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/CatalogFileLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/SubLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/SubLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/client/SubLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/client/SubLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/FoodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/FoodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/FoodItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/FoodItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem$Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem$Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/GenericItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/ItemCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/ItemCatalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/ItemCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/ItemCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/TechicalItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/TechicalItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/TechicalItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ru/billing/stocklist/TechicalItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,6 +76,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company.ru.billing.client" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company" />
     </key>
@@ -128,6 +147,11 @@
       <workItem from="1584957748222" duration="47000" />
       <workItem from="1585039078100" duration="196000" />
       <workItem from="1585046051004" duration="139000" />
+      <workItem from="1585132176485" duration="3023000" />
+      <workItem from="1585136009181" duration="35000" />
+      <workItem from="1585136112292" duration="176000" />
+      <workItem from="1585139672210" duration="493000" />
+      <workItem from="1585140517335" duration="968000" />
     </task>
     <servers />
   </component>
@@ -139,30 +163,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584912096842" />
-    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1584914225952">
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1585132518334">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1584914225952" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1585132518334" />
     <state x="470" y="272" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584456226097">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="272" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1584456226097" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1585046189140">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1585135989835">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585046189140" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1585046189139">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585135989835" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1585135989834">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585046189139" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1585046189138">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585135989834" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1585135989833">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585046189138" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1585046189139">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585135989833" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1585135989835">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585046189139" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585135989835" />
     <state x="221" y="63" key="SettingsEditor" timestamp="1584908417467">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -171,10 +195,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1584564942842" />
-    <state x="458" y="220" key="extract.method.dialog" timestamp="1583878348224">
+    <state x="458" y="220" key="extract.method.dialog" timestamp="1585139715361">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="220" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1583878348224" />
+    <state x="458" y="220" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1585139715361" />
     <state x="97" y="72" key="new project wizard" timestamp="1583671970417">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

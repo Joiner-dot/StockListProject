@@ -1,6 +1,11 @@
 package com.company.ru.billing.stocklist;
 
-public class GenericItem{
+public class GenericItem implements Item{
+    @Override
+    public void printall (){
+        System.out.printf ("ID: %d, Name: %s, price:%5.2f, category: %s \n", ID, name, price, category);
+    }
+
     public enum Category{FOOD, PRINT, DRESS, GENERAL}
 
     public GenericItem (String name, float price, Category category){
@@ -33,6 +38,7 @@ public class GenericItem{
         }
     }
 
+    @Override
     public int getID (){
         return ID;
     }
@@ -87,10 +93,6 @@ public class GenericItem{
     private float price;
     private GenericItem analog;
     private Category category = Category.GENERAL;
-
-    public void printAll (){
-        System.out.printf ("ID: %d, Name: %s, price:%5.2f, category: %s \n", ID, name, price, category);
-    }
 
     public boolean equals (Object o){
         try{

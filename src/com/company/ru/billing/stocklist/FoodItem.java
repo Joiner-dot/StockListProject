@@ -52,8 +52,8 @@ public class FoodItem extends GenericItem{
     }
 
     @Override
-    public void printAll (){
-        super.printAll ();
+    public void printall (){
+        super.printall ();
         System.out.println (dateOfIncome + " " + expires);
     }
 

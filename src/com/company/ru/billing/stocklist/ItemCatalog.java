@@ -7,14 +7,14 @@ import java.util.HashMap;
 
 public class ItemCatalog{
 
-    private HashMap<Integer, GenericItem> catalog =
-            new HashMap<Integer, GenericItem> ();
-    private ArrayList<GenericItem> ALCatalog =
-            new ArrayList<GenericItem> ();
+    private HashMap<Integer, Item> catalog =
+            new HashMap<Integer, Item> ();
+    private ArrayList<Item> ALCatalog =
+            new ArrayList<> ();
 
     public void addItem (GenericItem item) throws ItemAlreadyExistsException{
         try{
-            for (GenericItem item1 : ALCatalog){
+            for (Item item1 : ALCatalog){
                 if (item1.equals (item)){
                     throw new ItemAlreadyExistsException ();
                 }
@@ -27,21 +27,17 @@ public class ItemCatalog{
     }
 
     public void printItem (){
-        for (GenericItem i : ALCatalog){
+        for (Item i : ALCatalog){
             System.out.println (i.toString ());
         }
     }
 
-    public GenericItem findItemByID (int id){
-        if (!catalog.containsKey (id)){
-            return null;
-        } else{
-            return catalog.get (id);
-        }
+    public Item findItemByID (int id){
+        return catalog.getOrDefault (id, null);
     }
 
-    public GenericItem findItemByIDAL (int id){
-        for (GenericItem i : ALCatalog){
+    public Item findItemByIDAL (int id){
+        for (Item i : ALCatalog){
             if (i.getID () == id) return i;
         }
         return null;

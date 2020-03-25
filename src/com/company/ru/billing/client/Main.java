@@ -24,8 +24,8 @@ public class Main{
         }
         CatalogFileLoader file = new CatalogFileLoader ("com/company/Readme.txt");
         try{
-            file.load (itemCatalog);
-        } catch (CatalogLoadExceptions | IOException catalogLoadExceptions){
+            file.windows1251load (itemCatalog);
+        } catch (IOException catalogLoadExceptions){
             catalogLoadExceptions.printStackTrace ();
         }
         itemCatalog.printItem ();
